@@ -1,7 +1,7 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
     <ui:VisualElement style="flex-direction: row; align-items: center;">
         <ui:VisualElement style="background-image: url(&apos;project://database/Assets/FGameEngine/Editor/ExcelLogoSmall.scale-80.png?fileID=2800000&amp;guid=f94391ad151b64f43a0de48d93ccfdb5&amp;type=3#ExcelLogoSmall.scale-80&apos;); flex-grow: 0; width: 32px; height: 32px; flex-shrink: 0;" />
-        <ui:Label display-tooltip-when-elided="true" style="flex-grow: 1; align-items: auto; -unity-text-align: middle-left;" />
-        <ui:Button text="移除" display-tooltip-when-elided="true" style="background-color: rgb(171, 0, 0); height: 20px; justify-content: flex-start; align-items: stretch; -unity-text-align: lower-center;" />
+        <ui:Label display-tooltip-when-elided="true" name="ExcelName" style="flex-grow: 1; align-items: auto; -unity-text-align: middle-left;" />
+        <ui:Button text="移除" display-tooltip-when-elided="true" name="Remove" style="background-color: rgb(171, 0, 0); height: 20px; justify-content: flex-start; align-items: stretch; -unity-text-align: lower-center;" />
     </ui:VisualElement>
 </ui:UXML>
