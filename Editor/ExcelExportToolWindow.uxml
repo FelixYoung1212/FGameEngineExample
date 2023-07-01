@@ -1,9 +1,18 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
-    <ui:VisualElement name="ListView" style="flex-wrap: nowrap; align-items: stretch;">
-        <ui:ListView focusable="true" name="ExcelListView" reorderable="false" show-add-remove-footer="false" show-alternating-row-backgrounds="None" show-bound-collection-size="true" style="height: 198px; background-color: rgb(34, 34, 34); align-items: stretch; flex-grow: 0;" />
+    <ui:VisualElement style="flex-direction: row; flex-shrink: 0;">
+        <ui:VisualElement name="ListView" style="flex-wrap: nowrap; align-items: stretch; width: 409px;">
+            <ui:ListView focusable="true" name="ExcelListView" reorderable="false" show-add-remove-footer="false" show-alternating-row-backgrounds="None" show-bound-collection-size="true" style="height: 198px; background-color: rgb(34, 34, 34); align-items: stretch; flex-grow: 0;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="ExcelInfoView" style="flex-grow: 1;">
+            <ui:Toggle label="导出字典" name="IsDict" style="flex-grow: 0; flex-shrink: 0; flex-basis: auto; flex-wrap: nowrap;" />
+            <ui:DropdownField label="字典Key" index="-1" choices="System.Collections.Generic.List`1[System.String]" name="DictKey" />
+        </ui:VisualElement>
     </ui:VisualElement>
     <ui:VisualElement style="flex-direction: row;">
         <uie:EnumField label="导出类型" value="Json" type="FGameEngine.Editor.ExcelExportType, FGameEngine.Editor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ExportType" style="flex-grow: 1;" />
+    </ui:VisualElement>
+    <ui:VisualElement style="flex-direction: row;">
+        <ui:DropdownField label="头行数" index="-1" choices="System.Collections.Generic.List`1[System.String]" name="HeaderNum" style="flex-grow: 1;" />
     </ui:VisualElement>
     <ui:VisualElement style="flex-direction: row; flex-shrink: 0; flex-grow: 0;">
         <ui:Label text="文件" display-tooltip-when-elided="true" style="width: 40px;" />
