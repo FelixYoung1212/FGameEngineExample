@@ -1,0 +1,10 @@
+{
+    "name": "com.firstgamestudio.fgameengine",
+    "displayName": "FGameEngine",
+    "description": "A Unity GameDevelop Engine, To Help Developer Work Easy And Quick",
+    "version": "1.0.0",
+    "unity": "2018.3",
+    "license": "MIT",
+    "dependencies": {
+     }
+    }

@@ -1,0 +1,11 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <ui:VisualElement style="flex-direction: row;">
+        <ui:Label text="界面名称：" display-tooltip-when-elided="true" enable-rich-text="false" style="-unity-text-align: middle-center;" />
+        <ui:TextField picking-mode="Ignore" name="uiName" style="flex-shrink: 1; flex-grow: 1;" />
+    </ui:VisualElement>
+    <ui:VisualElement style="flex-direction: row;">
+        <ui:Label text="效果图：" display-tooltip-when-elided="true" enable-rich-text="false" style="-unity-text-align: middle-center;" />
+        <uie:ObjectField allow-scene-objects="false" type="UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" style="flex-shrink: 1; flex-grow: 1;" />
+    </ui:VisualElement>
+    <ui:Button text="创建" display-tooltip-when-elided="true" enable-rich-text="false" style="background-color: rgb(0, 192, 20);" />
+</ui:UXML>
